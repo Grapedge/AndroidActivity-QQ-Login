@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_layout"
+        >
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:text="链接"
+            android:id="@+id/button_link"
+            android:layout_weight="1"
+            />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:text="图片"
+            android:id="@+id/button_pic"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:gravity="left|top"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/bottom_layout"
+        />
+</RelativeLayout>
